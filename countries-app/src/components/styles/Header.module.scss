@@ -1,0 +1,19 @@
+@import "src/scss-utils/mixins";
+.container{
+  background-color: white;
+  padding: 2em 1em;
+  box-shadow: $general-elevation-shadow;
+}
+
+.headingContainer{
+  max-width: $content-width;
+  margin: 0 auto;
+}
+
+.textContainer{
+  margin: 0;
+  font-size: 1.2rem;
+  @include respond-to("medium"){
+    font-size: 2em;
+  }
+}

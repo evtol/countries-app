@@ -1,0 +1,44 @@
+
+.spinnerContainerOverlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.40);
+    margin: 0;
+}
+
+
+.spinnerContainerInline{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    border-width: 10px;
+    border-color: rgba(255, 255, 255, 0.09);
+    border-top-color: #ffffff;
+    animation: spin 1s infinite linear;
+    border-radius: 100%;
+    border-style: solid;
+}
+
+div.spinnerInline{
+    border-color: rgba(0,0,0,0);
+    border-top-color: #ffffff;
+    animation: spin .5s infinite linear;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}

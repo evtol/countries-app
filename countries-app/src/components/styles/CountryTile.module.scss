@@ -1,0 +1,26 @@
+@import "src/scss-utils/mixins";
+.container{
+   width: 260px;
+   height: 100%;
+   background-color: #FFFFFF;
+   border-radius: 5px;
+   box-shadow: $general-elevation-shadow;
+}
+
+.image{
+   border-top-left-radius: 5px;
+   border-top-right-radius: 5px;
+}
+
+.infoContainer{
+   padding: .5em 1em 1.5em .5em;
+}
+
+.tableContainer{
+   font-size: .88rem;
+   line-height: 1.4em;
+}
+
+.label{
+   font-weight: 800;
+}

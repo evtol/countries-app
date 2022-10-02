@@ -1,0 +1,33 @@
+@import "src/scss-utils/mixins";
+
+.container{
+  display: flex;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #FFFFFF;
+  gap: 5px;
+  box-shadow: $general-elevation-shadow;
+}
+
+.iconContainer{
+  flex-grow: 0;
+  display:flex;
+  align-items: center;
+  padding-left: 1em;
+}
+
+.icon{
+  stroke: #968d8d;
+}
+
+.input{
+  width: 100%;
+  padding: 1em;
+  color: #968d8d;
+  border-width: 0;
+  font-family: 'Nunito Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.3rem;
+  @include respond-to('large') {
+    font-size: 0.85rem;
+  }
+}

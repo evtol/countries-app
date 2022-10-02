@@ -1,0 +1,12 @@
+@import "src/scss-utils/mixins";
+
+.container{
+  min-height: 100vh;
+}
+
+.childrenContainer{
+  max-width: $content-width;
+  padding: 1em;
+  margin: 0 auto;
+}
+

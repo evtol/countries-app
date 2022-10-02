@@ -1,0 +1,14 @@
+.container{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: .3em 1em;
+  border-radius: 3px;
+  box-shadow: 0 0 10px 1px rgb(0 0 0 / 26%);
+  border-width: 0;
+}
+
+.iconContainer{
+  display:inline-flex;
+  padding-right: .3em;
+}

@@ -1,0 +1,62 @@
+/* cra setup for importing css for making elements consistent on multiple browsers */
+@import-normalize;
+
+
+/* chose woff/woff2 formats as they are more performant and
+supported by 98.4% of all users */
+
+/* nunito-sans-regular - latin */
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+  url('./assets/fonts/nunito-sans-v12-latin-regular.woff2') format('woff2'),
+  url('./assets/fonts/nunito-sans-v12-latin-regular.woff') format('woff');
+}
+
+/* nunito-sans-700 - latin */
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+  url('./assets/fonts/nunito-sans-v12-latin-700.woff2') format('woff2'),
+  url('./assets/fonts/nunito-sans-v12-latin-700.woff') format('woff');
+}
+
+/* nunito-sans-800 - latin */
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: local(''),
+  url('./assets/fonts/nunito-sans-v12-latin-800.woff2') format('woff2'),
+  url('./assets/fonts/nunito-sans-v12-latin-800.woff') format('woff');
+}
+
+
+/* nunito-sans-600 - latin */
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local(''),
+  url('./assets/fonts/nunito-sans-v12-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('./assets/fonts/nunito-sans-v12-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+body {
+  background-color: #f3f3f3;
+  margin: 0;
+  font-family: 'Nunito Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
