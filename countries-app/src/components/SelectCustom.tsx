@@ -50,6 +50,7 @@ function SelectCustom(props:IProps) {
   } = props;
   return (
     <Select
+      aria-label={placeholder}
       placeholder={placeholder}
       options={options}
       components={{ IndicatorSeparator }}

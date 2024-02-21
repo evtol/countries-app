@@ -38,7 +38,11 @@
         "@typescript-eslint/no-shadow": ["error"],
         "max-len": ["warn", { "code": 95 }],
         "react-hooks/rules-of-hooks": "error",
-        "react-hooks/exhaustive-deps": "warn"
+        "react-hooks/exhaustive-deps": "warn",
+        "import/no-extraneous-dependencies": [
+            "error",
+            {"devDependencies": true}
+        ]
     },
     "settings": {
         "import/resolver": {

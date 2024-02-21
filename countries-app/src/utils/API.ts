@@ -1,9 +1,7 @@
-import urljoin from 'url-join';
-
 /**
  * helper function to perform the HTTP GET requests to JSON endpoints.
  *
- * @param url the url of the endoint to be called.
+ * @param url the url of the endpoint to be called.
  */
 
 function getData(url: string) {
@@ -26,7 +24,7 @@ function getCountriesAPIData(endpoint: string, data: string) {
     throw Error('No .env variable * API_URL * provided');
   }
   // we use .env{development/production} file to set up the endpoints.
-  const url = urljoin(process.env.REACT_APP_API_URL, endpoint, data);
+  const url = `${process.env.REACT_APP_API_URL}${endpoint}${data}`;
   return getData(url);
 }
 
@@ -45,7 +43,7 @@ export function searchByCodes(code:string[]) {
 }
 
 export function getAllCountries() {
-  return getCountriesAPIData('all', '');
+  return getCountriesAPIData('all/', '');
 }
 
 export const STALE_TIME = process.env.REACT_APP_AJAX_CALL_STALE

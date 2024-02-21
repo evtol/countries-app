@@ -50,12 +50,12 @@ function CountryTile({ country, isLazyLaded = false }
           height={173}
           loading={isLazyLaded ? 'lazy' : 'eager'}
         />
-        <div className={styles.infoContainer}>
+        <div className={styles.infoContainer} data-testid={country.name.common}>
           <h3>{country.name.common}</h3>
-          <div className={styles.tableContainer}>
+          <div className={styles.tableContainer} role="list">
             {info.map((inf: Info) => (
               inf.value !== 'undefined' && (
-              <div key={inf.label}>
+              <div role="listitem" key={inf.label}>
                 <span className={styles.label}>
                   {`${inf.label}: `}
                 </span>
